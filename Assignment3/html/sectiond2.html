@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Section D2</title>
+    <script>
+      var doesExist = true;
+      function enableUpload(choice){
+        var x = choice.value;
+
+        if(x == "yes" && doesExist==false){
+          document.getElementById("form1").innerHTML = document.getElementById("form1").innerHTML + '<input type="file" id="file" name="file" size="30" required>';
+          doesExist=true;
+        }
+        if(x == "no" && doesExist){
+          var elem = document.getElementById("file");
+          elem.parentElement.removeChild(elem);
+          doesExist = false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form id="form1" action="successfully_submitted.html" method="post">
+      <button type="submit" name="Submit">Submit</button>
+      <br>
+      <label>First name: <input type="text" name="fname" required></label>
+      <br>
+      <label>Last name: <input type="text" name="lname" required></label>
+      <br>
+      <label>Email: <input type="email" name="email" required></label>
+      <br>
+      ID:
+      <label><input type="radio" name="ID" value="yes" onclick="enableUpload(this)" checked>Yes</label>
+      <label><input type="radio" name="ID" value="no" onclick="enableUpload(this)">No</label>
+      <br>
+      <input type="file" id="file" name="file" size="30" required>
+    </form>
+  </body>
+</html>

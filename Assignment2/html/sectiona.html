@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Section A</title>
+  </head>
+  <body>
+
+
+    <!-- Q1-->
+    <h1>Section A - XML Format & Design & System Administration</h1>
+    <h2>1.	Convert the following loose HTML5 format into XML format.
+       Mention the required changes as comments.
+        Then write the code in the answer</h2>
+    <h3>
+      &lthtml&gt <br>
+        &ltbody&gt &frasl;&frasl;change Body to small letter "body" <br>
+          &ltp&gt <br>
+          &ltitalic&gt Welcome to my web site &lt/italic&gt <br>
+          &lt/p&gt &frasl;&frasl;remove the unmatched &ltp&gt tag <br>
+          &ltp&gt
+          the site more often PLEASE!
+          &lt/p&gt &frasl;&frasl;add a pair of extra &ltp&gt tags <br>
+        &lt/body&gt <br>
+      &lt/html&gt <br>
+
+    </h3>
+    <!-- Q1 -->
+
+
+    <br>
+
+
+    <!-- Q2 -->
+    <h2>2.	Do the minimum changes to rename the following files so they are compatible with windows 7 and higher versions of windows operating system,
+      mention the reasons why they are not compatible with these operating systems</h2>
+    <h3>a.	0360-270/advancedWebsiteDesign.txt -&gt 0360-270advancedWebsiteDesign.txt because "/" cannot be included when create the file name</h3>
+    <h3>b.	?Webdesign.html  -&gt Webdesign.html because "?" is an illegal character when create a file name</h3>
+    <h3>c.	&ltHello&gt.html  -&gt Hello.html becasue "<" and ">" are not allowed in file name</h3>
+    <h3>Those characters have a functional meaning that affects the operating system's handling of the files and even recognizing that there is even a file if it had to encounter such a filename. </h3>
+    <!-- Q2 -->
+
+
+    <br>
+
+    <!-- Q3 -->
+    <h2>3.	Fill in the blank:  </h2>
+    <h3>a.	<span style="color:red">Selector</span> the part of a style rule that determines which html element to match.  </h3>
+    <h3>b.	The <span style="color:red">:hover pseudo-class</span> lets you apply a style that appears when hover over an element with a pointer.</h3>
+    <h3>c.	<span style="color:red">JavaScript</span> is a client-side scripting language used with HTML forms.  </h3>
+    <!-- Q3 -->
+
+
+    <br>
+
+
+    <!-- Q4 -->
+    <h2>4.	Browse the web, and find a site that does not contain a user survey form. Write a user survey with
+    10 questions that you would use on the site. Tailor the questions to the site’s content and goals. Restrict the user options with radio buttons, dropdown lists, check boxes, etc. design a wireframe that includes the survey, using a tool like pencil or paint. the wireframe should mimic the look and feel of the selected website</h2>
+
+    <img src="../pic/website.jpg" alt="Stack Overflow Website front page" width = "70%">
+
+    <form  action="sectiona.html" method="post">
+      <h2>Site Survey<br></h2>
+      <p>
+        <b>1. Are you satisfied with answer from the community?</b><br>
+
+        <label><input type="radio" name="satisfy" value="satisfied" required>Satisfied</label>
+        <label><input type="radio" name="satisfy" value="not satisfied">Not satisfied</label>
+        <br>
+
+        <b>2. What is your education level?</b><br>
+        <select name="education">
+          <option value="High School">High School</option>
+          <option value="Undergraduate">Undergraduate</option>
+          <option value="Graduate">Graduate</option>
+        </select>
+        <br>
+
+        <b>3. What programming language are you using?</b><br>
+        <label><input type="checkbox" name="PLanguage" value="Java">Java</label>
+        <label><input type="checkbox" name="PLanguage" value="HTML5">HTML5</label>
+        <label><input type="checkbox" name="PLanguage" value="C/C++">C/C++</label>
+        <label><input type="checkbox" name="PLanguage" value="HTML5">HTML5</label>
+        <label> Other Language: <input type="text" name="PLanguage"></label>
+        <br>
+
+        <b>4. How many hours you spend on programming per day?</b><br>
+        <label><input type="radio" name="hours" value="Less than 1 hour" required>Less than 1 hour</label>
+        <label><input type="radio" name="hours" value="1 - 2 hours">1 - 2 hours</label>
+        <label><input type="radio" name="hours" value="2 - 3 hours">2 - 3 hours</label>
+        <label><input type="radio" name="hours" value="More than 3 hours">More than 3 hours</label>
+        <br>
+
+
+        <b>5. Do you think the job recommendation section is helpful?</b><br>
+        <label><input type="radio" name="Ishelpful" value="Helpful">Helpful</label>
+        <label><input type="radio" name="Ishelpful" value="Not Helpful">Not helpful</label>
+        <br>
+
+        <b>6. How many quetions you post per week?</b><br>
+        <label><input type="radio" name="Questions" value="Less than 1 questioquestionsns" required>Less than 1 questions</label>
+        <label><input type="radio" name="Questions" value="1 - 2 questions">1 - 2 questions</label>
+        <label><input type="radio" name="Questions" value="2 - 3 questions">2 - 3 questions</label>
+        <label><input type="radio" name="Questions" value="More than 3 questions">More than 3 questions</label>
+        <br>
+
+
+        <b>7. Have you ever found your solution in HOT NETWORK QUESTIONS section?</b><br>
+        <label><input type="radio" name="Found" value="Yes" required>Yes</label>
+        <label><input type="radio" name="Found" value="No">No</label>
+        <br>
+
+        <b>8. Does the online Ads valuable to you?</b><br>
+        <label><input type="radio" name="valuable" value="Yes" required>Yes</label>
+        <label><input type="radio" name="valuable" value="No">No</label>
+        <br>
+
+        <b>9. Will you recommend the website to your friends or colleages?</b><br>
+        <label><input type="radio" name="recommend" value="Yes" required>Yes</label>
+        <label><input type="radio" name="recommend" value="No">No</label>
+        <br>
+
+        <b>10. Are you a professional programmer?</b><br>
+        <label><input type="radio" name="recommend" value="Yes" required>Yes</label>
+        <label><input type="radio" name="recommend" value="No">No</label>
+        <br>
+
+        <input type="submit" name="Submit" value="Submit">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" name="Reset" value="Reset">
+
+      </p>
+
+    </form>
+    <br>
+
+    <img src="../pic/wireframe.jpg" alt="Wireframe For Survey Page" width=70%"">
+    <!-- Q4 -->
+
+    <br>
+
+  </body>
+</html>
